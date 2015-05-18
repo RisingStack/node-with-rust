@@ -1,0 +1,8 @@
+[package]
+name = "hello_node"
+version = "0.1.0"
+authors = ["Gergely Nemeth <mail@nemethgergely.com>"]
+
+[lib]
+name = "embed"
+crate-type = ["dylib"]
