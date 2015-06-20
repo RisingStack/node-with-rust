@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "cargo build --release"
+    "build-rust": "cargo build --release",
+    "build-c": "gcc -c -fPIC src/fibonacci.c -o target/fibonacci.o; g++ -dynamiclib -undefined suppress -flat_namespace target/*.o -o target/fibonacci.dylib"
   },
   "repository": {
     "type": "git",
