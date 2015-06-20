@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-rust": "cargo build --release",
-    "build-c": "gcc -dynamiclib -undefined suppress -flat_namespace src/fibonacci.c -o target/fibonacci.dylib"
+    "build-c": "gcc -dynamiclib -undefined suppress -flat_namespace src/fibonacci.c -o target/fibonacci.dylib -O3"
   },
   "repository": {
     "type": "git",
